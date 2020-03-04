@@ -6,7 +6,7 @@ import {
     AlHeraldAccountSubscriptionV2,
     AlHeraldIntegration,
     AlHeraldSubscribersV2 } from "@al/herald";
-import { ReportSchedule } from "@al/cargo";
+import { ReportScheduleV2 } from "@al/cargo";
 
 export interface AlThreatLevel {
     value: string;
@@ -143,7 +143,7 @@ export class AlScheduledReportDefinition {
 
     public properties: AlScheduledReportProperties;
 
-    constructor(rawData: ReportSchedule) {
+    constructor(rawData: ReportScheduleV2) {
         // from cargo
         this.id = rawData.id;
 
